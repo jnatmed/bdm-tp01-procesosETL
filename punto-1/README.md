@@ -23,4 +23,4 @@
         + [tabla_provincias (CSV)](extraccion/tabla_provincias.csv) / [tabla_provincias (TXT)](extraccion/tabla_provincias.txt), 
         + [tabla_especialidad (CSV)](extraccion/tabla_especialidad.csv) / [tabla_especialidad (TXT)](extraccion/tabla_especialidad.txt)
 - Creacion de tablas en PosgreSql: se creo el archivo [creacion_tabla.sql](carga/creacion_tablas.sql), donde se crearon las tablas correspondientes. Se copio y ejecuto en Pgadmin. 
-- Se importo cada uno de los archivos de texto. Finalizando con la normalizacion solicitada. 
+- Se importo cada uno de los archivos de texto a la tabla de la base de datos usando la plataforma de PGADMIN. Finalizando con la normalizacion solicitada. 

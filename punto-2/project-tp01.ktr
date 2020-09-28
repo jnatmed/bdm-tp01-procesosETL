@@ -430,7 +430,7 @@
     <created_date>2020/09/27 12:25:09.980</created_date>
     <modified_user>-</modified_user>
     <modified_date>2020/09/27 12:25:09.980</modified_date>
-    <key_for_session_key/>
+    <key_for_session_key>H4sIAAAAAAAAAAMAAAAAAAAAAAA=</key_for_session_key>
     <is_key_private>N</is_key_private>
   </info>
   <notepads>
@@ -587,7 +587,495 @@
       <to>agregar_id_ciudad</to>
       <enabled>Y</enabled>
     </hop>
+    <hop>
+      <from>01-02-planes.txt</from>
+      <to>Replace in string</to>
+      <enabled>Y</enabled>
+    </hop>
   </order>
+  <step>
+    <name>01-02-planes.txt</name>
+    <type>TextFileInput</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <accept_filenames>N</accept_filenames>
+    <passing_through_fields>N</passing_through_fields>
+    <accept_field/>
+    <accept_stepname/>
+    <separator>	</separator>
+    <enclosure>"</enclosure>
+    <enclosure_breaks>N</enclosure_breaks>
+    <escapechar/>
+    <header>N</header>
+    <nr_headerlines>1</nr_headerlines>
+    <footer>N</footer>
+    <nr_footerlines>1</nr_footerlines>
+    <line_wrapped>N</line_wrapped>
+    <nr_wraps>1</nr_wraps>
+    <layout_paged>N</layout_paged>
+    <nr_lines_per_page>80</nr_lines_per_page>
+    <nr_lines_doc_header>0</nr_lines_doc_header>
+    <noempty>Y</noempty>
+    <include>N</include>
+    <include_field/>
+    <rownum>N</rownum>
+    <rownumByFile>N</rownumByFile>
+    <rownum_field/>
+    <format>DOS</format>
+    <encoding/>
+    <length>Characters</length>
+    <add_to_result_filenames>Y</add_to_result_filenames>
+    <file>
+      <name>${Internal.Entry.Current.Directory}/01-02-planes.txt</name>
+      <filemask/>
+      <exclude_filemask/>
+      <file_required>N</file_required>
+      <include_subfolders>N</include_subfolders>
+      <type>CSV</type>
+      <compression>None</compression>
+    </file>
+    <filters>
+    </filters>
+    <fields>
+      <field>
+        <name>Field_000</name>
+        <type>None</type>
+        <format/>
+        <currency>¤</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <nullif>-</nullif>
+        <ifnull/>
+        <position>-1</position>
+        <length>75</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+        <repeat>N</repeat>
+      </field>
+    </fields>
+    <limit>0</limit>
+    <error_ignored>N</error_ignored>
+    <skip_bad_files>N</skip_bad_files>
+    <file_error_field/>
+    <file_error_message_field/>
+    <error_line_skipped>N</error_line_skipped>
+    <error_count_field/>
+    <error_fields_field/>
+    <error_text_field/>
+    <bad_line_files_destination_directory/>
+    <bad_line_files_extension>warning</bad_line_files_extension>
+    <error_line_files_destination_directory/>
+    <error_line_files_extension>error</error_line_files_extension>
+    <line_number_files_destination_directory/>
+    <line_number_files_extension>line</line_number_files_extension>
+    <date_format_lenient>Y</date_format_lenient>
+    <date_format_locale>es_419</date_format_locale>
+    <shortFileFieldName/>
+    <pathFieldName/>
+    <hiddenFieldName/>
+    <lastModificationTimeFieldName/>
+    <uriNameFieldName/>
+    <rootUriNameFieldName/>
+    <extensionFieldName/>
+    <sizeFieldName/>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>96</xloc>
+      <yloc>368</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Insertar_en_Tabla_CIUDAD</name>
+    <type>InsertUpdate</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <connection>conexion_punto2</connection>
+    <commit>100</commit>
+    <update_bypassed>N</update_bypassed>
+    <lookup>
+      <schema>public</schema>
+      <table>Ciudades</table>
+      <key>
+        <name>id_ciudad</name>
+        <field>id_ciudad</field>
+        <condition>=</condition>
+        <name2/>
+      </key>
+      <key>
+        <name>codigo_postal</name>
+        <field>codigo_postal</field>
+        <condition>=</condition>
+        <name2/>
+      </key>
+      <key>
+        <name>nombre_ciudad</name>
+        <field>nombre_ciudad</field>
+        <condition>=</condition>
+        <name2/>
+      </key>
+      <key>
+        <name>provincia</name>
+        <field>provincia</field>
+        <condition>=</condition>
+        <name2/>
+      </key>
+      <value>
+        <name>id_ciudad</name>
+        <rename>id_ciudad</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>codigo_postal</name>
+        <rename>codigo_postal</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>nombre_ciudad</name>
+        <rename>nombre_ciudad</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>provincia</name>
+        <rename>provincia</rename>
+        <update>Y</update>
+      </value>
+    </lookup>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>848</xloc>
+      <yloc>304</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Insertar_en_Tabla_COHORTE</name>
+    <type>InsertUpdate</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <connection>conexion_punto2</connection>
+    <commit>100</commit>
+    <update_bypassed>N</update_bypassed>
+    <lookup>
+      <schema>public</schema>
+      <table>Cohortes</table>
+      <key>
+        <name>id_cohorte</name>
+        <field>id_cohorte</field>
+        <condition>=</condition>
+        <name2/>
+      </key>
+      <key>
+        <name>cohorte</name>
+        <field>cohorte</field>
+        <condition>=</condition>
+        <name2/>
+      </key>
+      <value>
+        <name>id_cohorte</name>
+        <rename>id_cohorte</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>cohorte</name>
+        <rename>cohorte</rename>
+        <update>Y</update>
+      </value>
+    </lookup>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>848</xloc>
+      <yloc>224</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Insertar_en_Tabla_SEDES</name>
+    <type>InsertUpdate</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <connection>conexion_punto2</connection>
+    <commit>100</commit>
+    <update_bypassed>N</update_bypassed>
+    <lookup>
+      <schema>public</schema>
+      <table>Sedes</table>
+      <key>
+        <name>id_sede</name>
+        <field>id_sede</field>
+        <condition>=</condition>
+        <name2/>
+      </key>
+      <key>
+        <name>sede</name>
+        <field>sede</field>
+        <condition>=</condition>
+        <name2/>
+      </key>
+      <value>
+        <name>id_sede</name>
+        <rename>id_sede</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>sede</name>
+        <rename>sede</rename>
+        <update>Y</update>
+      </value>
+    </lookup>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>848</xloc>
+      <yloc>64</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Insertar_en_Tabla_SEXO</name>
+    <type>InsertUpdate</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <connection>conexion_punto2</connection>
+    <commit>100</commit>
+    <update_bypassed>N</update_bypassed>
+    <lookup>
+      <schema>public</schema>
+      <table>Sexo</table>
+      <key>
+        <name>id_sexo</name>
+        <field>id_sexo</field>
+        <condition>=</condition>
+        <name2/>
+      </key>
+      <key>
+        <name>sexo</name>
+        <field>sexo</field>
+        <condition>=</condition>
+        <name2/>
+      </key>
+      <value>
+        <name>id_sexo</name>
+        <rename>id_sexo</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>sexo</name>
+        <rename>sexo</rename>
+        <update>Y</update>
+      </value>
+    </lookup>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>848</xloc>
+      <yloc>144</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>agregar_id_ciudad</name>
+    <type>Sequence</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <valuename>id_ciudad</valuename>
+    <use_database>N</use_database>
+    <connection>conexion_punto2</connection>
+    <schema/>
+    <seqname>SEQ_</seqname>
+    <use_counter>Y</use_counter>
+    <counter_name/>
+    <start_at>1</start_at>
+    <increment_by>1</increment_by>
+    <max_value>9999999</max_value>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>560</xloc>
+      <yloc>304</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>agregar_id_cohorte</name>
+    <type>Sequence</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <valuename>id_cohorte</valuename>
+    <use_database>N</use_database>
+    <connection>conexion_punto2</connection>
+    <schema/>
+    <seqname>SEQ_</seqname>
+    <use_counter>Y</use_counter>
+    <counter_name/>
+    <start_at>1</start_at>
+    <increment_by>1</increment_by>
+    <max_value>9999999</max_value>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>560</xloc>
+      <yloc>224</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>agregar_id_sede</name>
+    <type>Sequence</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <valuename>id_sede</valuename>
+    <use_database>N</use_database>
+    <connection>conexion_punto2</connection>
+    <schema/>
+    <seqname>SEQ_</seqname>
+    <use_counter>Y</use_counter>
+    <counter_name/>
+    <start_at>1</start_at>
+    <increment_by>1</increment_by>
+    <max_value>9999999</max_value>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>544</xloc>
+      <yloc>64</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>agregar_id_sexo</name>
+    <type>Sequence</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <valuename>id_sexo</valuename>
+    <use_database>N</use_database>
+    <connection>conexion_punto2</connection>
+    <schema/>
+    <seqname>SEQ_</seqname>
+    <use_counter>Y</use_counter>
+    <counter_name/>
+    <start_at>1</start_at>
+    <increment_by>1</increment_by>
+    <max_value>9999999</max_value>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>544</xloc>
+      <yloc>144</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
   <step>
     <name>etl_estudiantes</name>
     <type>CsvInput</type>
@@ -599,7 +1087,7 @@
       <method>none</method>
       <schema_name/>
     </partitioning>
-    <filename>C:\Users\FamiliaNatelloMedina\Documents\UNLu\BasedeDatosMasivas\Trabajos Practicos\tp01-103902\ds\etl_estudiantes.csv</filename>
+    <filename>${Internal.Entry.Current.Directory}/etl_estudiantes.csv</filename>
     <filename_field/>
     <rownum_field/>
     <include_filename>N</include_filename>
@@ -729,270 +1217,6 @@
     </GUI>
   </step>
   <step>
-    <name>extraer_sexo</name>
-    <type>SelectValues</type>
-    <description/>
-    <distribute>Y</distribute>
-    <custom_distribution/>
-    <copies>1</copies>
-    <partitioning>
-      <method>none</method>
-      <schema_name/>
-    </partitioning>
-    <fields>
-      <field>
-        <name>id_estudiante</name>
-        <rename/>
-      </field>
-      <field>
-        <name>plan_estudios</name>
-        <rename/>
-      </field>
-      <field>
-        <name>sede</name>
-        <rename/>
-      </field>
-      <field>
-        <name>codigo_postal</name>
-        <rename/>
-      </field>
-      <field>
-        <name>localidad</name>
-        <rename/>
-      </field>
-      <field>
-        <name>provincia</name>
-        <rename/>
-      </field>
-      <field>
-        <name>pais</name>
-        <rename/>
-      </field>
-      <field>
-        <name>sexo</name>
-        <rename/>
-      </field>
-      <field>
-        <name>cohorte</name>
-        <rename/>
-      </field>
-      <select_unspecified>N</select_unspecified>
-      <remove>
-        <name>id_estudiante</name>
-      </remove>
-      <remove>
-        <name>plan_estudios</name>
-      </remove>
-      <remove>
-        <name>sede</name>
-      </remove>
-      <remove>
-        <name>codigo_postal</name>
-      </remove>
-      <remove>
-        <name>localidad</name>
-      </remove>
-      <remove>
-        <name>provincia</name>
-      </remove>
-      <remove>
-        <name>pais</name>
-      </remove>
-      <remove>
-        <name>cohorte</name>
-      </remove>
-    </fields>
-    <attributes/>
-    <cluster_schema/>
-    <remotesteps>
-      <input>
-      </input>
-      <output>
-      </output>
-    </remotesteps>
-    <GUI>
-      <xloc>336</xloc>
-      <yloc>144</yloc>
-      <draw>Y</draw>
-    </GUI>
-  </step>
-  <step>
-    <name>extraer_sede</name>
-    <type>SelectValues</type>
-    <description/>
-    <distribute>Y</distribute>
-    <custom_distribution/>
-    <copies>1</copies>
-    <partitioning>
-      <method>none</method>
-      <schema_name/>
-    </partitioning>
-    <fields>
-      <field>
-        <name>id_estudiante</name>
-        <rename/>
-      </field>
-      <field>
-        <name>plan_estudios</name>
-        <rename/>
-      </field>
-      <field>
-        <name>sede</name>
-        <rename/>
-      </field>
-      <field>
-        <name>codigo_postal</name>
-        <rename/>
-      </field>
-      <field>
-        <name>localidad</name>
-        <rename/>
-      </field>
-      <field>
-        <name>provincia</name>
-        <rename/>
-      </field>
-      <field>
-        <name>pais</name>
-        <rename/>
-      </field>
-      <field>
-        <name>sexo</name>
-        <rename/>
-      </field>
-      <field>
-        <name>cohorte</name>
-        <rename/>
-      </field>
-      <select_unspecified>N</select_unspecified>
-      <remove>
-        <name>id_estudiante</name>
-      </remove>
-      <remove>
-        <name>plan_estudios</name>
-      </remove>
-      <remove>
-        <name>codigo_postal</name>
-      </remove>
-      <remove>
-        <name>localidad</name>
-      </remove>
-      <remove>
-        <name>provincia</name>
-      </remove>
-      <remove>
-        <name>pais</name>
-      </remove>
-      <remove>
-        <name>sexo</name>
-      </remove>
-      <remove>
-        <name>cohorte</name>
-      </remove>
-    </fields>
-    <attributes/>
-    <cluster_schema/>
-    <remotesteps>
-      <input>
-      </input>
-      <output>
-      </output>
-    </remotesteps>
-    <GUI>
-      <xloc>336</xloc>
-      <yloc>64</yloc>
-      <draw>Y</draw>
-    </GUI>
-  </step>
-  <step>
-    <name>extraer_cohorte</name>
-    <type>SelectValues</type>
-    <description/>
-    <distribute>Y</distribute>
-    <custom_distribution/>
-    <copies>1</copies>
-    <partitioning>
-      <method>none</method>
-      <schema_name/>
-    </partitioning>
-    <fields>
-      <field>
-        <name>id_estudiante</name>
-        <rename/>
-      </field>
-      <field>
-        <name>plan_estudios</name>
-        <rename/>
-      </field>
-      <field>
-        <name>sede</name>
-        <rename/>
-      </field>
-      <field>
-        <name>codigo_postal</name>
-        <rename/>
-      </field>
-      <field>
-        <name>localidad</name>
-        <rename/>
-      </field>
-      <field>
-        <name>provincia</name>
-        <rename/>
-      </field>
-      <field>
-        <name>pais</name>
-        <rename/>
-      </field>
-      <field>
-        <name>sexo</name>
-        <rename/>
-      </field>
-      <field>
-        <name>cohorte</name>
-        <rename/>
-      </field>
-      <select_unspecified>N</select_unspecified>
-      <remove>
-        <name>id_estudiante</name>
-      </remove>
-      <remove>
-        <name>plan_estudios</name>
-      </remove>
-      <remove>
-        <name>sede</name>
-      </remove>
-      <remove>
-        <name>codigo_postal</name>
-      </remove>
-      <remove>
-        <name>localidad</name>
-      </remove>
-      <remove>
-        <name>provincia</name>
-      </remove>
-      <remove>
-        <name>pais</name>
-      </remove>
-      <remove>
-        <name>sexo</name>
-      </remove>
-    </fields>
-    <attributes/>
-    <cluster_schema/>
-    <remotesteps>
-      <input>
-      </input>
-      <output>
-      </output>
-    </remotesteps>
-    <GUI>
-      <xloc>336</xloc>
-      <yloc>224</yloc>
-      <draw>Y</draw>
-    </GUI>
-  </step>
-  <step>
     <name>extraer_ciudad</name>
     <type>SelectValues</type>
     <description/>
@@ -1006,19 +1230,15 @@
     <fields>
       <field>
         <name>id_estudiante</name>
-        <rename/>
       </field>
       <field>
         <name>plan_estudios</name>
-        <rename/>
       </field>
       <field>
         <name>sede</name>
-        <rename/>
       </field>
       <field>
         <name>codigo_postal</name>
-        <rename/>
       </field>
       <field>
         <name>localidad</name>
@@ -1026,19 +1246,15 @@
       </field>
       <field>
         <name>provincia</name>
-        <rename/>
       </field>
       <field>
         <name>pais</name>
-        <rename/>
       </field>
       <field>
         <name>sexo</name>
-        <rename/>
       </field>
       <field>
         <name>cohorte</name>
-        <rename/>
       </field>
       <select_unspecified>N</select_unspecified>
       <remove>
@@ -1071,105 +1287,6 @@
     <GUI>
       <xloc>336</xloc>
       <yloc>304</yloc>
-      <draw>Y</draw>
-    </GUI>
-  </step>
-  <step>
-    <name>extraer_sedes_unicos</name>
-    <type>UniqueRowsByHashSet</type>
-    <description/>
-    <distribute>Y</distribute>
-    <custom_distribution/>
-    <copies>1</copies>
-    <partitioning>
-      <method>none</method>
-      <schema_name/>
-    </partitioning>
-    <store_values>N</store_values>
-    <reject_duplicate_row>N</reject_duplicate_row>
-    <error_description/>
-    <fields>
-      <field>
-        <name>sede</name>
-      </field>
-    </fields>
-    <attributes/>
-    <cluster_schema/>
-    <remotesteps>
-      <input>
-      </input>
-      <output>
-      </output>
-    </remotesteps>
-    <GUI>
-      <xloc>432</xloc>
-      <yloc>64</yloc>
-      <draw>Y</draw>
-    </GUI>
-  </step>
-  <step>
-    <name>extraer_sexo_unico</name>
-    <type>UniqueRowsByHashSet</type>
-    <description/>
-    <distribute>Y</distribute>
-    <custom_distribution/>
-    <copies>1</copies>
-    <partitioning>
-      <method>none</method>
-      <schema_name/>
-    </partitioning>
-    <store_values>N</store_values>
-    <reject_duplicate_row>N</reject_duplicate_row>
-    <error_description/>
-    <fields>
-      <field>
-        <name>sexo</name>
-      </field>
-    </fields>
-    <attributes/>
-    <cluster_schema/>
-    <remotesteps>
-      <input>
-      </input>
-      <output>
-      </output>
-    </remotesteps>
-    <GUI>
-      <xloc>432</xloc>
-      <yloc>144</yloc>
-      <draw>Y</draw>
-    </GUI>
-  </step>
-  <step>
-    <name>extraer_cohorte_unico</name>
-    <type>UniqueRowsByHashSet</type>
-    <description/>
-    <distribute>Y</distribute>
-    <custom_distribution/>
-    <copies>1</copies>
-    <partitioning>
-      <method>none</method>
-      <schema_name/>
-    </partitioning>
-    <store_values>N</store_values>
-    <reject_duplicate_row>N</reject_duplicate_row>
-    <error_description/>
-    <fields>
-      <field>
-        <name>cohorte</name>
-      </field>
-    </fields>
-    <attributes/>
-    <cluster_schema/>
-    <remotesteps>
-      <input>
-      </input>
-      <output>
-      </output>
-    </remotesteps>
-    <GUI>
-      <xloc>448</xloc>
-      <yloc>224</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
@@ -1207,42 +1324,7 @@
     </GUI>
   </step>
   <step>
-    <name>agregar_id_sede</name>
-    <type>Sequence</type>
-    <description/>
-    <distribute>Y</distribute>
-    <custom_distribution/>
-    <copies>1</copies>
-    <partitioning>
-      <method>none</method>
-      <schema_name/>
-    </partitioning>
-    <valuename>id_sede</valuename>
-    <use_database>N</use_database>
-    <connection>conexion_punto2</connection>
-    <schema/>
-    <seqname>SEQ_</seqname>
-    <use_counter>Y</use_counter>
-    <counter_name/>
-    <start_at>1</start_at>
-    <increment_by>1</increment_by>
-    <max_value>9999999</max_value>
-    <attributes/>
-    <cluster_schema/>
-    <remotesteps>
-      <input>
-      </input>
-      <output>
-      </output>
-    </remotesteps>
-    <GUI>
-      <xloc>544</xloc>
-      <yloc>64</yloc>
-      <draw>Y</draw>
-    </GUI>
-  </step>
-  <step>
-    <name>ordenar_campos_TSEDES</name>
+    <name>extraer_cohorte</name>
     <type>SelectValues</type>
     <description/>
     <distribute>Y</distribute>
@@ -1254,48 +1336,57 @@
     </partitioning>
     <fields>
       <field>
-        <name>id_sede</name>
-        <rename/>
+        <name>id_estudiante</name>
+      </field>
+      <field>
+        <name>plan_estudios</name>
       </field>
       <field>
         <name>sede</name>
-        <rename/>
+      </field>
+      <field>
+        <name>codigo_postal</name>
+      </field>
+      <field>
+        <name>localidad</name>
+      </field>
+      <field>
+        <name>provincia</name>
+      </field>
+      <field>
+        <name>pais</name>
+      </field>
+      <field>
+        <name>sexo</name>
+      </field>
+      <field>
+        <name>cohorte</name>
       </field>
       <select_unspecified>N</select_unspecified>
-      <meta>
-        <name>id_sede</name>
-        <rename>id_sede</rename>
-        <type>Integer</type>
-        <length>-2</length>
-        <precision>-2</precision>
-        <conversion_mask/>
-        <date_format_lenient>false</date_format_lenient>
-        <date_format_locale/>
-        <date_format_timezone/>
-        <lenient_string_to_number>false</lenient_string_to_number>
-        <encoding/>
-        <decimal_symbol/>
-        <grouping_symbol/>
-        <currency_symbol/>
-        <storage_type/>
-      </meta>
-      <meta>
+      <remove>
+        <name>id_estudiante</name>
+      </remove>
+      <remove>
+        <name>plan_estudios</name>
+      </remove>
+      <remove>
         <name>sede</name>
-        <rename>sede</rename>
-        <type>String</type>
-        <length>40</length>
-        <precision>-2</precision>
-        <conversion_mask/>
-        <date_format_lenient>false</date_format_lenient>
-        <date_format_locale/>
-        <date_format_timezone/>
-        <lenient_string_to_number>false</lenient_string_to_number>
-        <encoding/>
-        <decimal_symbol/>
-        <grouping_symbol/>
-        <currency_symbol/>
-        <storage_type/>
-      </meta>
+      </remove>
+      <remove>
+        <name>codigo_postal</name>
+      </remove>
+      <remove>
+        <name>localidad</name>
+      </remove>
+      <remove>
+        <name>provincia</name>
+      </remove>
+      <remove>
+        <name>pais</name>
+      </remove>
+      <remove>
+        <name>sexo</name>
+      </remove>
     </fields>
     <attributes/>
     <cluster_schema/>
@@ -1306,14 +1397,14 @@
       </output>
     </remotesteps>
     <GUI>
-      <xloc>672</xloc>
-      <yloc>64</yloc>
+      <xloc>336</xloc>
+      <yloc>224</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
   <step>
-    <name>Insertar_en_Tabla_SEDES</name>
-    <type>InsertUpdate</type>
+    <name>extraer_cohorte_unico</name>
+    <type>UniqueRowsByHashSet</type>
     <description/>
     <distribute>Y</distribute>
     <custom_distribution/>
@@ -1322,35 +1413,14 @@
       <method>none</method>
       <schema_name/>
     </partitioning>
-    <connection>conexion_punto2</connection>
-    <commit>100</commit>
-    <update_bypassed>N</update_bypassed>
-    <lookup>
-      <schema>public</schema>
-      <table>Sedes</table>
-      <key>
-        <name>id_sede</name>
-        <field>id_sede</field>
-        <condition>=</condition>
-        <name2/>
-      </key>
-      <key>
-        <name>sede</name>
-        <field>sede</field>
-        <condition>=</condition>
-        <name2/>
-      </key>
-      <value>
-        <name>id_sede</name>
-        <rename>id_sede</rename>
-        <update>Y</update>
-      </value>
-      <value>
-        <name>sede</name>
-        <rename>sede</rename>
-        <update>Y</update>
-      </value>
-    </lookup>
+    <store_values>N</store_values>
+    <reject_duplicate_row>N</reject_duplicate_row>
+    <error_description/>
+    <fields>
+      <field>
+        <name>cohorte</name>
+      </field>
+    </fields>
     <attributes/>
     <cluster_schema/>
     <remotesteps>
@@ -1360,13 +1430,13 @@
       </output>
     </remotesteps>
     <GUI>
-      <xloc>848</xloc>
-      <yloc>64</yloc>
+      <xloc>448</xloc>
+      <yloc>224</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
   <step>
-    <name>ordenar_campos_TSEXO</name>
+    <name>extraer_sede</name>
     <type>SelectValues</type>
     <description/>
     <distribute>Y</distribute>
@@ -1378,48 +1448,57 @@
     </partitioning>
     <fields>
       <field>
-        <name>id_sexo</name>
-        <rename/>
+        <name>id_estudiante</name>
+      </field>
+      <field>
+        <name>plan_estudios</name>
+      </field>
+      <field>
+        <name>sede</name>
+      </field>
+      <field>
+        <name>codigo_postal</name>
+      </field>
+      <field>
+        <name>localidad</name>
+      </field>
+      <field>
+        <name>provincia</name>
+      </field>
+      <field>
+        <name>pais</name>
       </field>
       <field>
         <name>sexo</name>
-        <rename/>
+      </field>
+      <field>
+        <name>cohorte</name>
       </field>
       <select_unspecified>N</select_unspecified>
-      <meta>
-        <name>id_sexo</name>
-        <rename>id_sexo</rename>
-        <type>Integer</type>
-        <length>-2</length>
-        <precision>0</precision>
-        <conversion_mask/>
-        <date_format_lenient>false</date_format_lenient>
-        <date_format_locale/>
-        <date_format_timezone/>
-        <lenient_string_to_number>false</lenient_string_to_number>
-        <encoding/>
-        <decimal_symbol/>
-        <grouping_symbol/>
-        <currency_symbol/>
-        <storage_type/>
-      </meta>
-      <meta>
+      <remove>
+        <name>id_estudiante</name>
+      </remove>
+      <remove>
+        <name>plan_estudios</name>
+      </remove>
+      <remove>
+        <name>codigo_postal</name>
+      </remove>
+      <remove>
+        <name>localidad</name>
+      </remove>
+      <remove>
+        <name>provincia</name>
+      </remove>
+      <remove>
+        <name>pais</name>
+      </remove>
+      <remove>
         <name>sexo</name>
-        <rename>sexo</rename>
-        <type>String</type>
-        <length>1</length>
-        <precision>-2</precision>
-        <conversion_mask/>
-        <date_format_lenient>false</date_format_lenient>
-        <date_format_locale/>
-        <date_format_timezone/>
-        <lenient_string_to_number>false</lenient_string_to_number>
-        <encoding/>
-        <decimal_symbol/>
-        <grouping_symbol/>
-        <currency_symbol/>
-        <storage_type/>
-      </meta>
+      </remove>
+      <remove>
+        <name>cohorte</name>
+      </remove>
     </fields>
     <attributes/>
     <cluster_schema/>
@@ -1430,14 +1509,14 @@
       </output>
     </remotesteps>
     <GUI>
-      <xloc>672</xloc>
-      <yloc>144</yloc>
+      <xloc>336</xloc>
+      <yloc>64</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
   <step>
-    <name>Insertar_en_Tabla_SEXO</name>
-    <type>InsertUpdate</type>
+    <name>extraer_sedes_unicos</name>
+    <type>UniqueRowsByHashSet</type>
     <description/>
     <distribute>Y</distribute>
     <custom_distribution/>
@@ -1446,35 +1525,14 @@
       <method>none</method>
       <schema_name/>
     </partitioning>
-    <connection>conexion_punto2</connection>
-    <commit>100</commit>
-    <update_bypassed>N</update_bypassed>
-    <lookup>
-      <schema>public</schema>
-      <table>Sexo</table>
-      <key>
-        <name>id_sexo</name>
-        <field>id_sexo</field>
-        <condition>=</condition>
-        <name2/>
-      </key>
-      <key>
-        <name>sexo</name>
-        <field>sexo</field>
-        <condition>=</condition>
-        <name2/>
-      </key>
-      <value>
-        <name>id_sexo</name>
-        <rename>id_sexo</rename>
-        <update>Y</update>
-      </value>
-      <value>
-        <name>sexo</name>
-        <rename>sexo</rename>
-        <update>Y</update>
-      </value>
-    </lookup>
+    <store_values>N</store_values>
+    <reject_duplicate_row>N</reject_duplicate_row>
+    <error_description/>
+    <fields>
+      <field>
+        <name>sede</name>
+      </field>
+    </fields>
     <attributes/>
     <cluster_schema/>
     <remotesteps>
@@ -1484,48 +1542,13 @@
       </output>
     </remotesteps>
     <GUI>
-      <xloc>848</xloc>
-      <yloc>144</yloc>
+      <xloc>432</xloc>
+      <yloc>64</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
   <step>
-    <name>agregar_id_sexo</name>
-    <type>Sequence</type>
-    <description/>
-    <distribute>Y</distribute>
-    <custom_distribution/>
-    <copies>1</copies>
-    <partitioning>
-      <method>none</method>
-      <schema_name/>
-    </partitioning>
-    <valuename>id_sexo</valuename>
-    <use_database>N</use_database>
-    <connection>conexion_punto2</connection>
-    <schema/>
-    <seqname>SEQ_</seqname>
-    <use_counter>Y</use_counter>
-    <counter_name/>
-    <start_at>1</start_at>
-    <increment_by>1</increment_by>
-    <max_value>9999999</max_value>
-    <attributes/>
-    <cluster_schema/>
-    <remotesteps>
-      <input>
-      </input>
-      <output>
-      </output>
-    </remotesteps>
-    <GUI>
-      <xloc>544</xloc>
-      <yloc>144</yloc>
-      <draw>Y</draw>
-    </GUI>
-  </step>
-  <step>
-    <name>ordenar_campos_TCOHORTE</name>
+    <name>extraer_sexo</name>
     <type>SelectValues</type>
     <description/>
     <distribute>Y</distribute>
@@ -1537,48 +1560,57 @@
     </partitioning>
     <fields>
       <field>
-        <name>id_cohorte</name>
-        <rename/>
+        <name>id_estudiante</name>
+      </field>
+      <field>
+        <name>plan_estudios</name>
+      </field>
+      <field>
+        <name>sede</name>
+      </field>
+      <field>
+        <name>codigo_postal</name>
+      </field>
+      <field>
+        <name>localidad</name>
+      </field>
+      <field>
+        <name>provincia</name>
+      </field>
+      <field>
+        <name>pais</name>
+      </field>
+      <field>
+        <name>sexo</name>
       </field>
       <field>
         <name>cohorte</name>
-        <rename/>
       </field>
       <select_unspecified>N</select_unspecified>
-      <meta>
-        <name>id_cohorte</name>
-        <rename>id_cohorte</rename>
-        <type>Integer</type>
-        <length>-2</length>
-        <precision>0</precision>
-        <conversion_mask/>
-        <date_format_lenient>false</date_format_lenient>
-        <date_format_locale/>
-        <date_format_timezone/>
-        <lenient_string_to_number>false</lenient_string_to_number>
-        <encoding/>
-        <decimal_symbol/>
-        <grouping_symbol/>
-        <currency_symbol/>
-        <storage_type/>
-      </meta>
-      <meta>
+      <remove>
+        <name>id_estudiante</name>
+      </remove>
+      <remove>
+        <name>plan_estudios</name>
+      </remove>
+      <remove>
+        <name>sede</name>
+      </remove>
+      <remove>
+        <name>codigo_postal</name>
+      </remove>
+      <remove>
+        <name>localidad</name>
+      </remove>
+      <remove>
+        <name>provincia</name>
+      </remove>
+      <remove>
+        <name>pais</name>
+      </remove>
+      <remove>
         <name>cohorte</name>
-        <rename>cohorte</rename>
-        <type>Integer</type>
-        <length>15</length>
-        <precision>0</precision>
-        <conversion_mask/>
-        <date_format_lenient>false</date_format_lenient>
-        <date_format_locale/>
-        <date_format_timezone/>
-        <lenient_string_to_number>false</lenient_string_to_number>
-        <encoding/>
-        <decimal_symbol/>
-        <grouping_symbol/>
-        <currency_symbol/>
-        <storage_type/>
-      </meta>
+      </remove>
     </fields>
     <attributes/>
     <cluster_schema/>
@@ -1589,14 +1621,14 @@
       </output>
     </remotesteps>
     <GUI>
-      <xloc>688</xloc>
-      <yloc>224</yloc>
+      <xloc>336</xloc>
+      <yloc>144</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
   <step>
-    <name>Insertar_en_Tabla_COHORTE</name>
-    <type>InsertUpdate</type>
+    <name>extraer_sexo_unico</name>
+    <type>UniqueRowsByHashSet</type>
     <description/>
     <distribute>Y</distribute>
     <custom_distribution/>
@@ -1605,35 +1637,14 @@
       <method>none</method>
       <schema_name/>
     </partitioning>
-    <connection>conexion_punto2</connection>
-    <commit>100</commit>
-    <update_bypassed>N</update_bypassed>
-    <lookup>
-      <schema>public</schema>
-      <table>Cohortes</table>
-      <key>
-        <name>id_cohorte</name>
-        <field>id_cohorte</field>
-        <condition>=</condition>
-        <name2/>
-      </key>
-      <key>
-        <name>cohorte</name>
-        <field>cohorte</field>
-        <condition>=</condition>
-        <name2/>
-      </key>
-      <value>
-        <name>id_cohorte</name>
-        <rename>id_cohorte</rename>
-        <update>Y</update>
-      </value>
-      <value>
-        <name>cohorte</name>
-        <rename>cohorte</rename>
-        <update>Y</update>
-      </value>
-    </lookup>
+    <store_values>N</store_values>
+    <reject_duplicate_row>N</reject_duplicate_row>
+    <error_description/>
+    <fields>
+      <field>
+        <name>sexo</name>
+      </field>
+    </fields>
     <attributes/>
     <cluster_schema/>
     <remotesteps>
@@ -1643,43 +1654,8 @@
       </output>
     </remotesteps>
     <GUI>
-      <xloc>848</xloc>
-      <yloc>224</yloc>
-      <draw>Y</draw>
-    </GUI>
-  </step>
-  <step>
-    <name>agregar_id_cohorte</name>
-    <type>Sequence</type>
-    <description/>
-    <distribute>Y</distribute>
-    <custom_distribution/>
-    <copies>1</copies>
-    <partitioning>
-      <method>none</method>
-      <schema_name/>
-    </partitioning>
-    <valuename>id_cohorte</valuename>
-    <use_database>N</use_database>
-    <connection>conexion_punto2</connection>
-    <schema/>
-    <seqname>SEQ_</seqname>
-    <use_counter>Y</use_counter>
-    <counter_name/>
-    <start_at>1</start_at>
-    <increment_by>1</increment_by>
-    <max_value>9999999</max_value>
-    <attributes/>
-    <cluster_schema/>
-    <remotesteps>
-      <input>
-      </input>
-      <output>
-      </output>
-    </remotesteps>
-    <GUI>
-      <xloc>560</xloc>
-      <yloc>224</yloc>
+      <xloc>432</xloc>
+      <yloc>144</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
@@ -1697,11 +1673,9 @@
     <fields>
       <field>
         <name>id_ciudad</name>
-        <rename/>
       </field>
       <field>
         <name>codigo_postal</name>
-        <rename/>
       </field>
       <field>
         <name>ciudad</name>
@@ -1709,7 +1683,6 @@
       </field>
       <field>
         <name>provincia</name>
-        <rename/>
       </field>
       <select_unspecified>N</select_unspecified>
       <meta>
@@ -1796,118 +1769,7 @@
     </GUI>
   </step>
   <step>
-    <name>Insertar_en_Tabla_CIUDAD</name>
-    <type>InsertUpdate</type>
-    <description/>
-    <distribute>Y</distribute>
-    <custom_distribution/>
-    <copies>1</copies>
-    <partitioning>
-      <method>none</method>
-      <schema_name/>
-    </partitioning>
-    <connection>conexion_punto2</connection>
-    <commit>100</commit>
-    <update_bypassed>N</update_bypassed>
-    <lookup>
-      <schema>public</schema>
-      <table>Ciudades</table>
-      <key>
-        <name>id_ciudad</name>
-        <field>id_ciudad</field>
-        <condition>=</condition>
-        <name2/>
-      </key>
-      <key>
-        <name>codigo_postal</name>
-        <field>codigo_postal</field>
-        <condition>=</condition>
-        <name2/>
-      </key>
-      <key>
-        <name>nombre_ciudad</name>
-        <field>nombre_ciudad</field>
-        <condition>=</condition>
-        <name2/>
-      </key>
-      <key>
-        <name>provincia</name>
-        <field>provincia</field>
-        <condition>=</condition>
-        <name2/>
-      </key>
-      <value>
-        <name>id_ciudad</name>
-        <rename>id_ciudad</rename>
-        <update>Y</update>
-      </value>
-      <value>
-        <name>codigo_postal</name>
-        <rename>codigo_postal</rename>
-        <update>Y</update>
-      </value>
-      <value>
-        <name>nombre_ciudad</name>
-        <rename>nombre_ciudad</rename>
-        <update>Y</update>
-      </value>
-      <value>
-        <name>provincia</name>
-        <rename>provincia</rename>
-        <update>Y</update>
-      </value>
-    </lookup>
-    <attributes/>
-    <cluster_schema/>
-    <remotesteps>
-      <input>
-      </input>
-      <output>
-      </output>
-    </remotesteps>
-    <GUI>
-      <xloc>848</xloc>
-      <yloc>304</yloc>
-      <draw>Y</draw>
-    </GUI>
-  </step>
-  <step>
-    <name>agregar_id_ciudad</name>
-    <type>Sequence</type>
-    <description/>
-    <distribute>Y</distribute>
-    <custom_distribution/>
-    <copies>1</copies>
-    <partitioning>
-      <method>none</method>
-      <schema_name/>
-    </partitioning>
-    <valuename>id_ciudad</valuename>
-    <use_database>N</use_database>
-    <connection>conexion_punto2</connection>
-    <schema/>
-    <seqname>SEQ_</seqname>
-    <use_counter>Y</use_counter>
-    <counter_name/>
-    <start_at>1</start_at>
-    <increment_by>1</increment_by>
-    <max_value>9999999</max_value>
-    <attributes/>
-    <cluster_schema/>
-    <remotesteps>
-      <input>
-      </input>
-      <output>
-      </output>
-    </remotesteps>
-    <GUI>
-      <xloc>560</xloc>
-      <yloc>304</yloc>
-      <draw>Y</draw>
-    </GUI>
-  </step>
-  <step>
-    <name>extraer_ciudad 2</name>
+    <name>ordenar_campos_TCOHORTE</name>
     <type>SelectValues</type>
     <description/>
     <distribute>Y</distribute>
@@ -1919,52 +1781,46 @@
     </partitioning>
     <fields>
       <field>
-        <name>id_estudiante</name>
-      </field>
-      <field>
-        <name>plan_estudios</name>
-      </field>
-      <field>
-        <name>sede</name>
-      </field>
-      <field>
-        <name>codigo_postal</name>
-      </field>
-      <field>
-        <name>localidad</name>
-        <rename>ciudad</rename>
-      </field>
-      <field>
-        <name>provincia</name>
-      </field>
-      <field>
-        <name>pais</name>
-      </field>
-      <field>
-        <name>sexo</name>
+        <name>id_cohorte</name>
       </field>
       <field>
         <name>cohorte</name>
       </field>
       <select_unspecified>N</select_unspecified>
-      <remove>
-        <name>id_estudiante</name>
-      </remove>
-      <remove>
-        <name>plan_estudios</name>
-      </remove>
-      <remove>
-        <name>sede</name>
-      </remove>
-      <remove>
-        <name>pais</name>
-      </remove>
-      <remove>
-        <name>sexo</name>
-      </remove>
-      <remove>
+      <meta>
+        <name>id_cohorte</name>
+        <rename>id_cohorte</rename>
+        <type>Integer</type>
+        <length>-2</length>
+        <precision>0</precision>
+        <conversion_mask/>
+        <date_format_lenient>false</date_format_lenient>
+        <date_format_locale/>
+        <date_format_timezone/>
+        <lenient_string_to_number>false</lenient_string_to_number>
+        <encoding/>
+        <decimal_symbol/>
+        <grouping_symbol/>
+        <currency_symbol/>
+        <storage_type/>
+      </meta>
+      <meta>
         <name>cohorte</name>
-      </remove>
+        <rename>cohorte</rename>
+        <type>Integer</type>
+        <length>15</length>
+        <precision>0</precision>
+        <conversion_mask/>
+        <date_format_lenient>false</date_format_lenient>
+        <date_format_locale/>
+        <date_format_timezone/>
+        <lenient_string_to_number>false</lenient_string_to_number>
+        <encoding/>
+        <decimal_symbol/>
+        <grouping_symbol/>
+        <currency_symbol/>
+        <storage_type/>
+      </meta>
     </fields>
     <attributes/>
     <cluster_schema/>
@@ -1975,14 +1831,14 @@
       </output>
     </remotesteps>
     <GUI>
-      <xloc>336</xloc>
-      <yloc>384</yloc>
+      <xloc>688</xloc>
+      <yloc>224</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
   <step>
-    <name>01-02-planes.txt</name>
-    <type>TextFileInput</type>
+    <name>ordenar_campos_TSEDES</name>
+    <type>SelectValues</type>
     <description/>
     <distribute>Y</distribute>
     <custom_distribution/>
@@ -1991,71 +1847,289 @@
       <method>none</method>
       <schema_name/>
     </partitioning>
-    <accept_filenames>N</accept_filenames>
-    <passing_through_fields>N</passing_through_fields>
-    <accept_field/>
-    <accept_stepname/>
-    <separator>;</separator>
-    <enclosure>"</enclosure>
-    <enclosure_breaks>N</enclosure_breaks>
-    <escapechar/>
-    <header>Y</header>
-    <nr_headerlines>1</nr_headerlines>
-    <footer>N</footer>
-    <nr_footerlines>1</nr_footerlines>
-    <line_wrapped>N</line_wrapped>
-    <nr_wraps>1</nr_wraps>
-    <layout_paged>N</layout_paged>
-    <nr_lines_per_page>80</nr_lines_per_page>
-    <nr_lines_doc_header>0</nr_lines_doc_header>
-    <noempty>Y</noempty>
-    <include>N</include>
-    <include_field/>
-    <rownum>N</rownum>
-    <rownumByFile>N</rownumByFile>
-    <rownum_field/>
-    <format>DOS</format>
-    <encoding/>
-    <length>Characters</length>
-    <add_to_result_filenames>Y</add_to_result_filenames>
-    <file>
-      <name>${Internal.Entry.Current.Directory}/ds/01-02-planes.txt</name>
-      <filemask/>
-      <exclude_filemask/>
-      <file_required>N</file_required>
-      <include_subfolders>N</include_subfolders>
-      <type>CSV</type>
-      <compression>None</compression>
-    </file>
-    <filters>
-    </filters>
     <fields>
+      <field>
+        <name>id_sede</name>
+      </field>
+      <field>
+        <name>sede</name>
+      </field>
+      <select_unspecified>N</select_unspecified>
+      <meta>
+        <name>id_sede</name>
+        <rename>id_sede</rename>
+        <type>Integer</type>
+        <length>-2</length>
+        <precision>-2</precision>
+        <conversion_mask/>
+        <date_format_lenient>false</date_format_lenient>
+        <date_format_locale/>
+        <date_format_timezone/>
+        <lenient_string_to_number>false</lenient_string_to_number>
+        <encoding/>
+        <decimal_symbol/>
+        <grouping_symbol/>
+        <currency_symbol/>
+        <storage_type/>
+      </meta>
+      <meta>
+        <name>sede</name>
+        <rename>sede</rename>
+        <type>String</type>
+        <length>40</length>
+        <precision>-2</precision>
+        <conversion_mask/>
+        <date_format_lenient>false</date_format_lenient>
+        <date_format_locale/>
+        <date_format_timezone/>
+        <lenient_string_to_number>false</lenient_string_to_number>
+        <encoding/>
+        <decimal_symbol/>
+        <grouping_symbol/>
+        <currency_symbol/>
+        <storage_type/>
+      </meta>
     </fields>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>672</xloc>
+      <yloc>64</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>ordenar_campos_TSEXO</name>
+    <type>SelectValues</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <fields>
+      <field>
+        <name>id_sexo</name>
+      </field>
+      <field>
+        <name>sexo</name>
+      </field>
+      <select_unspecified>N</select_unspecified>
+      <meta>
+        <name>id_sexo</name>
+        <rename>id_sexo</rename>
+        <type>Integer</type>
+        <length>-2</length>
+        <precision>0</precision>
+        <conversion_mask/>
+        <date_format_lenient>false</date_format_lenient>
+        <date_format_locale/>
+        <date_format_timezone/>
+        <lenient_string_to_number>false</lenient_string_to_number>
+        <encoding/>
+        <decimal_symbol/>
+        <grouping_symbol/>
+        <currency_symbol/>
+        <storage_type/>
+      </meta>
+      <meta>
+        <name>sexo</name>
+        <rename>sexo</rename>
+        <type>String</type>
+        <length>1</length>
+        <precision>-2</precision>
+        <conversion_mask/>
+        <date_format_lenient>false</date_format_lenient>
+        <date_format_locale/>
+        <date_format_timezone/>
+        <lenient_string_to_number>false</lenient_string_to_number>
+        <encoding/>
+        <decimal_symbol/>
+        <grouping_symbol/>
+        <currency_symbol/>
+        <storage_type/>
+      </meta>
+    </fields>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>672</xloc>
+      <yloc>144</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Replace in string</name>
+    <type>ReplaceString</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <fields>
+      <field>
+        <in_stream_name>Field_000</in_stream_name>
+        <out_stream_name/>
+        <use_regex>yes</use_regex>
+        <replace_string>\s{2,}</replace_string>
+        <replace_by_string>;</replace_by_string>
+        <set_empty_string>N</set_empty_string>
+        <replace_field_by_string/>
+        <whole_word>yes</whole_word>
+        <case_sensitive>no</case_sensitive>
+        <is_unicode>no</is_unicode>
+      </field>
+    </fields>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>208</xloc>
+      <yloc>384</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>tabla_estudiantes</name>
+    <type>TableInput</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <connection>conexion_punto2</connection>
+    <sql>SELECT
+  id_estudiante
+, asignatura
+, condicion
+, calificacion
+FROM "public".cursadas_2003_etl
+</sql>
     <limit>0</limit>
-    <error_ignored>N</error_ignored>
-    <skip_bad_files>N</skip_bad_files>
-    <file_error_field/>
-    <file_error_message_field/>
-    <error_line_skipped>N</error_line_skipped>
-    <error_count_field/>
-    <error_fields_field/>
-    <error_text_field/>
-    <bad_line_files_destination_directory/>
-    <bad_line_files_extension>warning</bad_line_files_extension>
-    <error_line_files_destination_directory/>
-    <error_line_files_extension>error</error_line_files_extension>
-    <line_number_files_destination_directory/>
-    <line_number_files_extension>line</line_number_files_extension>
-    <date_format_lenient>Y</date_format_lenient>
-    <date_format_locale>es_419</date_format_locale>
-    <shortFileFieldName/>
-    <pathFieldName/>
-    <hiddenFieldName/>
-    <lastModificationTimeFieldName/>
-    <uriNameFieldName/>
-    <rootUriNameFieldName/>
-    <extensionFieldName/>
-    <sizeFieldName/>
+    <lookup/>
+    <execute_each_row>N</execute_each_row>
+    <variables_active>N</variables_active>
+    <lazy_conversion_active>N</lazy_conversion_active>
+    <cached_row_meta_active>N</cached_row_meta_active>
+    <row-meta>
+      <value-meta>
+        <type>Integer</type>
+        <storagetype>normal</storagetype>
+        <name>id_estudiante</name>
+        <length>9</length>
+        <precision>0</precision>
+        <origin>Table input</origin>
+        <comments>id_estudiante</comments>
+        <conversion_Mask>####0;-####0</conversion_Mask>
+        <decimal_symbol>,</decimal_symbol>
+        <grouping_symbol>.</grouping_symbol>
+        <currency_symbol/>
+        <trim_type>none</trim_type>
+        <case_insensitive>N</case_insensitive>
+        <collator_disabled>Y</collator_disabled>
+        <collator_strength>0</collator_strength>
+        <sort_descending>N</sort_descending>
+        <output_padding>N</output_padding>
+        <date_format_lenient>N</date_format_lenient>
+        <date_format_locale>es_419</date_format_locale>
+        <date_format_timezone>America/Buenos_Aires</date_format_timezone>
+        <lenient_string_to_number>N</lenient_string_to_number>
+      </value-meta>
+      <value-meta>
+        <type>Integer</type>
+        <storagetype>normal</storagetype>
+        <name>asignatura</name>
+        <length>9</length>
+        <precision>0</precision>
+        <origin>Table input</origin>
+        <comments>asignatura</comments>
+        <conversion_Mask>####0;-####0</conversion_Mask>
+        <decimal_symbol>,</decimal_symbol>
+        <grouping_symbol>.</grouping_symbol>
+        <currency_symbol/>
+        <trim_type>none</trim_type>
+        <case_insensitive>N</case_insensitive>
+        <collator_disabled>Y</collator_disabled>
+        <collator_strength>0</collator_strength>
+        <sort_descending>N</sort_descending>
+        <output_padding>N</output_padding>
+        <date_format_lenient>N</date_format_lenient>
+        <date_format_locale>es_419</date_format_locale>
+        <date_format_timezone>America/Buenos_Aires</date_format_timezone>
+        <lenient_string_to_number>N</lenient_string_to_number>
+      </value-meta>
+      <value-meta>
+        <type>String</type>
+        <storagetype>normal</storagetype>
+        <name>condicion</name>
+        <length>2147483647</length>
+        <precision>-1</precision>
+        <origin>Table input</origin>
+        <comments>condicion</comments>
+        <conversion_Mask/>
+        <decimal_symbol>,</decimal_symbol>
+        <grouping_symbol>.</grouping_symbol>
+        <currency_symbol/>
+        <trim_type>none</trim_type>
+        <case_insensitive>N</case_insensitive>
+        <collator_disabled>Y</collator_disabled>
+        <collator_strength>0</collator_strength>
+        <sort_descending>N</sort_descending>
+        <output_padding>N</output_padding>
+        <date_format_lenient>N</date_format_lenient>
+        <date_format_locale>es_419</date_format_locale>
+        <date_format_timezone>America/Buenos_Aires</date_format_timezone>
+        <lenient_string_to_number>N</lenient_string_to_number>
+      </value-meta>
+      <value-meta>
+        <type>Integer</type>
+        <storagetype>normal</storagetype>
+        <name>calificacion</name>
+        <length>9</length>
+        <precision>0</precision>
+        <origin>Table input</origin>
+        <comments>calificacion</comments>
+        <conversion_Mask>####0;-####0</conversion_Mask>
+        <decimal_symbol>,</decimal_symbol>
+        <grouping_symbol>.</grouping_symbol>
+        <currency_symbol/>
+        <trim_type>none</trim_type>
+        <case_insensitive>N</case_insensitive>
+        <collator_disabled>Y</collator_disabled>
+        <collator_strength>0</collator_strength>
+        <sort_descending>N</sort_descending>
+        <output_padding>N</output_padding>
+        <date_format_lenient>N</date_format_lenient>
+        <date_format_locale>es_419</date_format_locale>
+        <date_format_timezone>America/Buenos_Aires</date_format_timezone>
+        <lenient_string_to_number>N</lenient_string_to_number>
+      </value-meta>
+    </row-meta>
     <attributes/>
     <cluster_schema/>
     <remotesteps>
@@ -2066,7 +2140,7 @@
     </remotesteps>
     <GUI>
       <xloc>112</xloc>
-      <yloc>368</yloc>
+      <yloc>448</yloc>
       <draw>Y</draw>
     </GUI>
   </step>

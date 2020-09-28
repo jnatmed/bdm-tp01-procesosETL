@@ -1,13 +1,3 @@
-
-&l26A&k4S&a8L
-===============================================================================
-Universidad Nacional de Lujan                                   D.S.A./D.G.S.
-            LISTADO DE PLANES EXISTENTES
- Pagina: 001                                                         1/06/2015
-===============================================================================
-
-    CODIGO DE PLAN        CARRERA
-
     0101                  INGENIERIA EN ALIMENTOS
     0102                  INGENIERIA EN ALIMENTOS
     0103                  INGENIERIA EN ALIMENTOS
@@ -61,15 +51,7 @@ Universidad Nacional de Lujan                                   D.S.A./D.G.S.
     0508                  LICENCIATURA EN TRABAJO SOCIAL
     0509                  LICENCIATURA EN TRABAJO SOCIAL
     0510                  LICENCIATURA EN TRABAJO SOCIAL
-    0511                  LICENCIATURA EN TRABAJO SOCIAL
-===============================================================================
-Universidad Nacional de Lujan                                   D.S.A./D.G.S.
-            LISTADO DE PLANES EXISTENTES
- Pagina: 002                                                         1/06/2015
-===============================================================================
-
-    CODIGO DE PLAN        CARRERA
-
+    0511                  LICENCIATURA EN TRABAJO SOCIAL
     0566                  LICENCIATURA EN TRABAJO SOCIAL
     0567                  LICENCIATURA EN TRABAJO SOCIAL
     0591                  LICENCIATURA EN TRABAJO SOCIAL
@@ -123,15 +105,7 @@ Universidad Nacional de Lujan                                   D.S.A./D.G.S.
     1666                  PROFESORADO EN GEOGRAFIA
     1701                  LIC.EN SISTEMAS DE INFORMACION
     1702                  LIC.EN SISTEMAS DE INFORMACION
-    1703                  LIC.EN SISTEMAS DE INFORMACION
-===============================================================================
-Universidad Nacional de Lujan                                   D.S.A./D.G.S.
-            LISTADO DE PLANES EXISTENTES
- Pagina: 003                                                         1/06/2015
-===============================================================================
-
-    CODIGO DE PLAN        CARRERA
-
+    1703                  LIC.EN SISTEMAS DE INFORMACION
     1704                  LIC.EN SISTEMAS DE INFORMACION
     1706                  LIC.EN SISTEMAS DE INFORMACION
     1707                  LIC.EN SISTEMAS DE INFORMACION
@@ -185,16 +159,8 @@ Universidad Nacional de Lujan                                   D.S.A./D.G.S.
     2999                  LIC. EN INFORMACION AMBIENTAL
     3001                  ESPEC.EN PROC.FISC.Y LEY PEN.TRIB.Y PREV.
     3101                  ESP.EN PLAN.ESTR.APLIC.A FIN. Y COM.INT.
-    3201                  MAESTRIA EN CS.SOC.CON MENC.EN HIST.SOC.
-===============================================================================
-Universidad Nacional de Lujan                                   D.S.A./D.G.S.
-            LISTADO DE PLANES EXISTENTES
- Pagina: 004                                                         1/06/2015
-===============================================================================
-
-    CODIGO DE PLAN        CARRERA
-
-    3301                  PROF.EN ENSE¥ANZA MEDIA DE ADULTOS(CICLO PROF)
+    3201                  MAESTRIA EN CS.SOC.CON MENC.EN HIST.SOC.
+    3301                  PROF.EN ENSEï¿½ANZA MEDIA DE ADULTOS(CICLO PROF)
     3401                  ESPEC.EN CS.SOC. CON MENC. EN HIST. SOC.
     3501                  DOCTOR DE LA UNIVERS. NACIONAL DE LUJAN
     3601                  ESP.TELED.Y SIST.INF.GEO.APL.EST.MED.AMB.
@@ -229,4 +195,4 @@ Universidad Nacional de Lujan                                   D.S.A./D.G.S.
     9601                  LICENCIATURA EN EDUCACION PERMANENTE
     9701                  LIC. EN HISTORIA ARGENTINA Y AMERICANA
     9801                  TECNICO EN MUSEOS HISTORICOS
-    9999                  PARA MODIFICAC. DE EGRESADOS UNICAMENTE
+    9999                  PARA MODIFICAC. DE EGRESADOS UNICAMENTE
