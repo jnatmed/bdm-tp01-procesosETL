@@ -1,14 +1,4 @@
-### Punto 1) Se cuenta con el dataset Medios que cuenta con 7000 medios nacionales. Se desea normalizar esta información en una Base de Datos transaccional teniendo en cuenta que cada medio posee atributos correspondientes a su nombre, ubicación, tipo de medio y especialidad. Migre la información del archivo a una Base de Datos PostgreSQL con la siguiente estructura:
-
-    a. Medios(id, nombre, id_especialidad, id_tipo_medio, dirección, id_ciudad),
-    b. Especialidades(id, descripción),
-    c. Tipos_medio(id, descripción),
-    d. Ciudades(id, nombre, id_provincia).
-    e. Provincias(id, nombre).
-
-Explique someramente la metodología utilizada y estime el tiempo que le demandó la actividad.
-
-#### Respuesta: Para obtener una base de datos normalizada, se realizaron estos pasos sobre el archivo 01-01-Medios.xls
+#### Respuesta: Para obtener una base de datos normalizada, se realizaron los siguientes pasos sobre el archivo "01-01-Medios.xls"
 
 - Se realizaron todos los pasos de depuracion con funciones en Excel. 
 - Eliminar columnas no importantes: telefono, Web 1, Web 2, Area, Email 1, Email 2, Nombre Cargo, email personal 1, email personal 2, telefono personal, Actualizacion. 
