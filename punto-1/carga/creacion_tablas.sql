@@ -44,5 +44,3 @@ ALTER TABLE medios
     ADD CONSTRAINT fk_medios_id_ciudad
     FOREIGN KEY (id_ciudad)
     REFERENCES ciudades(id_ciudad);
-
-COPY PUBLIC.provincias FROM 'C:\Users\juanc\Documents\UNLu\BasesDeDatosMasivas\tp01-103902\ds\provincias.csv' DELIMITER ':'
