@@ -1,0 +1,16 @@
+1	agencia
+2	blog
+3	diario
+4	digital
+5	guia
+6	periodico
+7	periodico mens.
+8	periodico semanal
+9	portal
+10	r
+11	radio
+12	radio
+13	revista
+14	semanal
+15	suplementos
+16	television

@@ -1,0 +1,908 @@
+1	25 de mayo	1
+2	28 de noviembre	20
+3	30 de agosto	1
+4	9 de julio	1
+5	abra pampa	10
+6	acebal	21
+7	achiras	6
+8	adelia maria	6
+9	adrogue	1
+10	aguas verdes	1
+11	aguilares	23
+12	aimogasta	12
+13	alberti	1
+14	alcira gigena	6
+15	alcorta	21
+16	alejandro korn	1
+17	alejandro roca	6
+18	allen	16
+19	almirante brown	1
+20	alta gracia	6
+21	alta italia	11
+22	alvarez	21
+23	america	1
+24	ancaloo	21
+25	andalgala	3
+26	angel etcheverri	1
+27	angelica	21
+28	anta hualan	3
+29	añatuya	22
+30	apostoles	14
+31	arata	11
+32	arequito	21
+33	arias	6
+34	armstrong	21
+35	arrecifes	1
+36	arroyito	6
+37	arroyo seco	21
+38	arteaga	21
+39	ascension	1
+40	atblo. del valle	14
+41	avellaneda	1
+42	ayacucho	1
+43	azul	1
+44	bahia blanca	1
+45	balcarce	1
+46	balnearia	6
+47	banda del rio sali	23
+48	banderas	22
+49	banfield	1
+50	baradero	1
+51	bariloche	16
+52	barrancas	21
+53	barranqueras	4
+54	barrio marques de sobremonte	6
+55	basavilbaso	8
+56	beccar	1
+57	belen	3
+58	belen de escobar	1
+59	belgrano	21
+60	bell ville	6
+61	bella vista	4
+62	benavidez	1
+63	bengoolea	6
+64	benito juarez	1
+65	berazategui	1
+66	berisso	1
+67	bernal	1
+68	berrotaran	6
+69	bialet masse	6
+70	bigand	21
+71	billinghurst	1
+72	blaquier	1
+73	blgrano	21
+74	bolivar	1
+75	bolson	16
+76	bonifacio	1
+77	bonpland	7
+78	bouquet	21
+79	bovril	8
+80	bowen	13
+81	bragado	1
+82	brandsen	1
+83	brinckmann	6
+84	brinkmann	6
+85	buchardo	6
+86	c de patagones	1
+87	c l piedrabuena	20
+88	c. de patagones	1
+89	ca. san bartolome	6
+90	caa cati	7
+91	cachari	1
+92	cafayate	17
+93	calafate	20
+94	calamuchita	6
+95	calchaqui	21
+96	caleta oliva	20
+97	caleta olivia	20
+98	caleufu	11
+99	camarones	5
+100	campana	1
+101	campo grande	14
+102	campo largo	4
+103	campo viera	14
+104	canals	6
+105	candelaria	14
+106	canning	1
+107	cañada de gomez	21
+108	cañada rosquin	21
+109	cañada seca	1
+110	cañuelas	1
+111	capilla del señor	1
+112	capiovi	14
+113	capiovy	14
+114	capitan bermudez	21
+115	capitan sarmiento	1
+116	carapachay	1
+117	carcaraña	21
+118	carhue	1
+119	carilo	1
+120	carlos casares	1
+121	carlos pellegrini	21
+122	carlos tejedor	1
+123	carmen de areco	1
+124	carmen de patagones	1
+125	carrodilla	13
+126	casbas	1
+127	caseros	1
+128	casilda	21
+129	castelar	1
+130	castelli	1
+131	catamarca	3
+132	catriel	16
+133	catrilo	11
+134	caucete	18
+135	caviahue	15
+136	cdro. rivadavia	5
+137	centenario	15
+138	ceres	21
+139	cerrito	8
+140	cerro azul	14
+141	cervantes	16
+142	chabas	21
+143	chacabuco	1
+144	chacras de coria	13
+145	chajan	6
+146	chajari	8
+147	chamical	12
+148	chañar ladeado	21
+149	charata	4
+150	chascomus	1
+151	chavarria	7
+152	chepes	12
+153	chilecito	12
+154	chillar	1
+155	chivilcoy	1
+156	choele choel	16
+157	chos malal	15
+158	chovet	21
+159	cinco saltos	16
+160	cipoletti	16
+161	cipolletti	16
+162	ciudad de caucete	18
+163	ciudad de cordoba	6
+164	ciudad e. madero	1
+165	ciudadela	1
+166	cl piedrabuena	20
+167	claromeco	1
+168	claypole	1
+169	clorinda	9
+170	cnel. brandsen	1
+171	cnel. pringles	1
+172	cnia. avellaneda	8
+173	cnia. sarmiento	5
+174	colon	1
+175	colonia caroya	6
+176	comodoro rivadavia	5
+177	concepcion	23
+178	concepcion del bermejo	4
+179	concepcion del uruguay	8
+180	concordia	8
+181	confluencia	7
+182	cordoba	6
+183	coronda	21
+184	coronel baigorria	6
+185	coronel bustos	6
+186	coronel charlone	1
+187	coronel dorrego	1
+188	coronel du graty	4
+189	coronel moldes	6
+190	coronel pringles	1
+191	coronel suarez	1
+192	coronel vidal	1
+193	corral de bustos	6
+194	corrientes	7
+195	corzuela	4
+196	cosquin	6
+197	costa azul	1
+198	cplla del monte	6
+199	cplla. del monte	6
+200	crespo	8
+201	crpto a bernardi	8
+202	cruz	20
+203	cruz alta	6
+204	cruz del eje	6
+205	cuartel v., moreno	1
+206	curuzu cuatia	7
+207	cutral co	15
+208	daireaux	1
+209	darregueira	1
+210	dean funes	6
+211	del viso	1
+212	derqui	1
+213	diamante	8
+214	difunta correa	18
+215	dolavon	5
+216	dolores	1
+217	don torcuato	1
+218	eduardo castex	11
+219	el bolson	16
+220	el calafate	20
+221	el chalten	20
+222	el colorado	9
+223	el dorado	14
+224	el hoyo	5
+225	el jagüel	1
+226	el maiten	5
+227	el palomar	1
+228	el pato	1
+229	el quebrachal	17
+230	el soberbio	14
+231	el socorro	1
+232	el tala	17
+233	el talar, tigre	1
+234	el trebol	21
+235	eldorado	14
+236	elortondo	21
+237	embajador martini	11
+238	embalse	6
+239	embarcacion	17
+240	emilia	21
+241	empedrado	7
+242	ensenada	1
+243	escobar	1
+244	esperanza	21
+245	esquel	5
+246	esquina	7
+247	esteban echeverria	1
+248	etruria	6
+249	eugenio bustos	13
+250	eusebia	21
+251	exaltacion de la cruz	1
+252	ezeiza	1
+253	famaila	23
+254	famatina	12
+255	federacion	8
+256	federal	8
+257	felipe sola	1
+258	fernandez	22
+259	fernandez oro	16
+260	fiambala	3
+261	firmat	21
+262	florencio varela	1
+263	florentino ameghino	1
+264	florida	1
+265	fontana	4
+266	formosa	9
+267	fortin olmos	21
+268	francisco alvarez	1
+269	franck	21
+270	fray luis beltran	21
+271	fray m. esquiu	3
+272	fray mamerto esquiu	3
+273	fray mrto. esquiu	1
+274	freyre	6
+275	frias	22
+276	fuentes	21
+277	funes	21
+278	g de laferrere	1
+279	g. de laferrere	1
+280	gaiman	5
+281	galvez	21
+282	gaona	17
+283	garin	1
+284	garre	1
+285	garupa	14
+286	gbdor. virasoro	7
+287	gdor. virasoro	7
+288	general alvarado	1
+289	general alvear	13
+290	general arenales	1
+291	general belgrano	1
+292	general cabrera	6
+293	general campos	8
+294	general conesa	16
+295	general galarza	8
+296	general güemes	17
+297	general las heras	1
+298	general madariaga	1
+299	general mosconi	17
+300	general pacheco	1
+301	general pico	11
+302	general pinedo	4
+303	general pinto	1
+304	general ramirez	8
+305	general roca	16
+306	general rodriguez	1
+307	general san martin	1
+308	general viamonte	1
+309	general villegas	1
+310	general. belgrano	1
+311	glew	1
+312	gobernador crespo	21
+313	gobernador gregores	20
+314	gobernador virasoro	7
+315	godoy cruz	13
+316	gonzales chaves	1
+317	gonzales chavez	1
+318	gonzalez catan	1
+319	gonzalez chavez	1
+320	goya	7
+321	gral las heras	1
+322	gral. alvarado	1
+323	gral. alvear	1
+324	gral. belgrano	1
+325	gral. cabrera	6
+326	gral. campos	8
+327	gral. conesa	16
+328	gral. deheza	6
+329	gral. güemes	17
+330	gral. lamadrid	1
+331	gral. las heras	1
+332	gral. lavalle	1
+333	gral. madariaga	1
+334	gral. pacheco	1
+335	gral. pinedo	4
+336	gral. pinto	1
+337	gral. roca	16
+338	gral. rodriguez	1
+339	gral. rojo	1
+340	gral. san martin	4
+341	gral. villegas	1
+342	granadero baigorria	21
+343	gregorio de laferrere	1
+344	gualeguay	8
+345	gualeguaychu	8
+346	guamini	1
+347	guatrache	11
+348	guaymallen	13
+349	guernica	1
+350	haedo	1
+351	hanguelen	1
+352	hasenkamp	8
+353	helvecia	21
+354	henderson	1
+355	hernando	6
+356	hersilia	21
+357	huanchilla	6
+358	huanguelen	1
+359	hughes	21
+360	huinca renanco	6
+361	humahuaca	10
+362	hurligham	1
+363	hurlingham	1
+364	ibarreta	9
+365	ibicuy	8
+366	iguazu	14
+367	indio rico	1
+368	ing huergo	16
+369	ing jacobacci	16
+370	ingeniero jacobacci	16
+371	ingeniero luiggi	11
+372	inriville	6
+373	intendente alvear	11
+374	isidro casanova	1
+375	isidro casanova, la matanza	1
+376	isla verde	6
+377	islas malvinas	23
+378	italo	6
+379	itati	7
+380	ituzaingo	1
+381	j. b. alberdi	1
+382	j. de san martin	5
+383	jachal	18
+384	jacinto arauz	11
+385	james craik	6
+386	jardin america	14
+387	jauregui	1
+388	jesus maria	6
+389	joaquin v gonzalez	17
+390	joaquin v. gonzalez	17
+391	jose c paz	1
+392	jose c. paz	1
+393	jose ingeniero	1
+394	jose ingenieros	1
+395	jose leon suarez	1
+396	jovita	6
+397	juan bautista alberdi	23
+398	juan j castelli	4
+399	juan j. castelli	4
+400	juan jose castelli	4
+401	juan pujol	7
+402	juanj. castelli	4
+403	junin	1
+404	junin de los andes	15
+405	justiniano posse	6
+406	justo daract	18
+407	la banda	22
+408	la calera	6
+409	la carlota	6
+410	la cocha	23
+411	la consulta	13
+412	la cruz	7
+413	la cumbre	6
+414	la dulce	1
+415	la falda	6
+416	la leonesa	4
+417	la lucila	1
+418	la matanza	1
+419	la para	6
+420	la paz	8
+421	la plata	1
+422	la punta	19
+423	la qiuaca	10
+424	la quiaca	10
+425	la rioja	12
+426	la salada	1
+427	la toma	19
+428	la union	1
+429	laborde	6
+430	laboulaye	6
+431	lago pueblo	5
+432	lago puelo	5
+433	laguna blanca	9
+434	laguna larga	6
+435	laguna naineck	9
+436	laguna paiva	21
+437	lamarque	16
+438	lanus	1
+439	lanus oeste	1
+440	laprida	1
+441	larroque	8
+442	las acequias	6
+443	las breñas	4
+444	las flores	1
+445	las grutas	16
+446	las heras	1
+447	las lajitas	17
+448	las lomitas	9
+449	las palmas	4
+450	las parejas	21
+451	las perdices	6
+452	las rosas	21
+453	las talitas	23
+454	las tejas del valle viejo	3
+455	las toscas	21
+456	las varas	6
+457	las varillas	6
+458	leandro n. alem	14
+459	leones	6
+460	lezama	1
+461	lib. gral san martin	8
+462	lib. gral. san martin	10
+463	libertad	1
+464	libertador gral san martin	10
+465	libertador gral. san martin	10
+466	lima	1
+467	lincoln	1
+468	llavallol	1
+469	lnus	1
+470	loberia	1
+471	lobos	1
+472	loma hermosa	1
+473	lomas de zamora	1
+474	lomas del mirador	1
+475	longchamps	1
+476	los antiguos	20
+477	los cocos	6
+478	los condores	6
+479	los polvorines	1
+480	los ralos	23
+481	los reartes	6
+482	los surgentes	6
+483	los toldos	1
+484	los zorros	6
+485	lucas gonzales	8
+486	lucas gonzalez	8
+487	lucila del mar	1
+488	luis beltran	16
+489	luis guillon	1
+490	lujan	1
+491	luque	6
+492	machagai	4
+493	macia	8
+494	magdalena	1
+495	maipu	1
+496	makalle	4
+497	malabrigo	21
+498	malargüe	13
+499	malvinas argentinas	1
+500	manfredy	6
+501	maquinchao	16
+502	mar de ajo	1
+503	mar de las pampas	1
+504	mar del plata	1
+505	mar del tuyu	1
+506	marcos juarez	6
+507	marcos paz	1
+508	maria grande	8
+509	maria juana	21
+510	maria susana	21
+511	mariano h. alfonzo	1
+512	martin coronado	1
+513	martinez	1
+514	martinez de hoz	1
+515	martinez, san isidro	1
+516	mayor vicente e. villafañe	9
+517	mburucuya	7
+518	mechita	1
+519	mechongue	1
+520	melo	6
+521	mendoza	13
+522	mercedes	1
+523	merlo	1
+524	meson de fierro	4
+525	metan	17
+526	milagro	12
+527	mina clavero	6
+528	miraflores	4
+529	miramar	1
+530	mocoreta	7
+531	mocoretà	7
+532	monte buey	6
+533	monte caseros	7
+534	monte coseros	7
+535	monte grande	1
+536	monte grande, e. echeverria	1
+537	monte hermoso	1
+538	monte maiz	6
+539	monte quemado	22
+540	montecarlo	14
+541	monteros	23
+542	monterrico	10
+543	montes de oca	21
+544	moreno	1
+545	moron	1
+546	morrison	6
+547	morteros	6
+548	munro	1
+549	munro, vicente lopez	1
+550	murphy	21
+551	musica	5
+552	n. de la riestra	1
+553	navarro	1
+554	necochea	1
+555	nelson	21
+556	neuquen	15
+557	noetinger	6
+558	nogoya	8
+559	nono	6
+560	norberto de la riestra	1
+561	o´brien	1
+562	obera	14
+563	olavarria	1
+564	oliva	6
+565	olivos	1
+566	olta	12
+567	oncativo	6
+568	oran	17
+569	ordoñez	6
+570	orense	1
+571	oro verde	8
+572	pablo nogues	1
+573	pablo podesta	1
+574	palmira	13
+575	palpala	10
+576	pampa de los guanacos	22
+577	pampa del indio	4
+578	parana	8
+579	parera	11
+580	pascanas	6
+581	paso de los libres	7
+582	paso del rey	1
+583	pblo libertador	7
+584	pcia. de la plaza	4
+585	pedro luro	1
+586	pehuajo	1
+587	pellegrini	1
+588	perez	21
+589	pergamino	1
+590	perico	10
+591	perico del carmen	10
+592	perito moreno	20
+593	peyrano	21
+594	pichanal	17
+595	pico truncado	20
+596	piedra del aguila	15
+597	piedras blancas	8
+598	pigue	1
+599	pigüe	1
+600	pilar	1
+601	pinamar	1
+602	piñeyro	1
+603	pirane	9
+604	poman	3
+605	pontevedra	1
+606	porteña	6
+607	posadas	14
+608	pozo del molle	6
+609	ppa. del infierno	4
+610	presidencia roque peña	4
+611	presidencia roque saenz peña	4
+612	progreso	21
+613	ps de los libres	7
+614	pte. r. saenz peña	4
+615	pte. roque saenz peña	4
+616	puan	1
+617	pueblo esther	21
+618	pueblo italiano	6
+619	puerto belgrano	1
+620	puerto deseado	20
+621	puerto esperanza	14
+622	puerto gral san martin	21
+623	puerto iguazu	14
+624	puerto madryn	5
+625	puerto rico	14
+626	puerto rosales	1
+627	puerto san julian	20
+628	puerto santa cruz	20
+629	punta alta	1
+630	punta indio	1
+631	quilmes	1
+632	quimili	22
+633	quines	18
+634	quitilipi	4
+635	r de escalada	1
+636	rafael calzada	1
+637	rafael castillo	1
+638	rafaela	21
+639	ramallo	1
+640	ramirez	8
+641	ramona	21
+642	ramos mejia	1
+643	ranchos	1
+644	rancul	11
+645	rauch	1
+646	rawson	5
+647	realico	11
+648	reconquista	21
+649	recreo	3
+650	reduccion	6
+651	remedios de escalada	1
+652	resistencia	4
+653	reta	1
+654	ricardone	21
+655	rincon de los sauces	15
+656	rio ceballos	6
+657	rio colorado	16
+658	rio cuarto	6
+659	rio de los sauces	6
+660	rio gallegos	20
+661	rio grande	23
+662	rio grande drios	23
+663	rio hondo	22
+664	rio mayo	5
+665	rio primero	6
+666	rio segundo	6
+667	rio tercero	6
+668	rio turbio	20
+669	rivadavia	13
+670	rivera	1
+671	rodeo de la cruz	13
+672	rojas	1
+673	roldan	21
+674	roman	21
+675	romang	21
+676	roque perez	1
+677	roque s. peña	4
+678	roque saenz peña	4
+679	rosario	21
+680	rosario de la frontera	17
+681	rosario de lerma	17
+682	rosario del tala	8
+683	rufino	21
+684	s carlos centro	21
+685	s clara de buena vista	21
+686	s jeronimo norte	21
+687	s ramon nva oran	17
+688	s. clara del mar	1
+689	s. de la ventana	1
+690	s. de los padres	1
+691	saavedra	1
+692	sachayoj	22
+693	saenz peña	4
+694	saladas	7
+695	saladillo	1
+696	salazar	1
+697	salliquelo	1
+698	salta	17
+699	salto	1
+700	salvador mazza	17
+701	sampacho	6
+702	san a. de areco	1
+703	san andres	1
+704	san andres de giles	1
+705	san antonio de areco	1
+706	san antonio de padua	1
+707	san antonio oeste	16
+708	san basilio	6
+709	san benito	8
+710	san bernardo	1
+711	san carlos centro	21
+712	san carlos de bariloche	16
+713	san cayetano	1
+714	san clemente	1
+715	san clemente del tuyu	1
+716	san cristobal	21
+717	san fco. solano	1
+718	san fernando	3
+719	san francisco	6
+720	san francisco solano	1
+721	san genaro	21
+722	san genaro norte	21
+723	san gregorio	21
+724	san guillermo	21
+725	san isidro	1
+726	san isidro de lules	23
+727	san isidro, vicente lopez y otros	1
+728	san javier	21
+729	san jenaro norte	21
+730	san jeronimo norte	21
+731	san jorge	21
+732	san jose	8
+733	san jose de feliciano	8
+734	san jose de jachal	18
+735	san jose de la esquina	21
+736	san juan	18
+737	san justo	1
+738	san l del palmar	7
+739	san lorenzo	21
+740	san luis	19
+741	san marcos sierra	6
+742	san martin	1
+743	san martin de los andes	15
+744	san matin	1
+745	san miguel	1
+746	san miguel de tucuman	23
+747	san miguel del monte	1
+748	san mimguel de tucuman	23
+749	san nicolas	1
+750	san nicolas de los arroyos	1
+751	san pedro	1
+752	san rafael	13
+753	san ramon	17
+754	san roque	7
+755	san salvador	8
+756	san salvador de jujuy	10
+757	san vicente	1
+758	sana fe	21
+759	sancti spiritu	21
+760	santa ana	23
+761	santa catalina	6
+762	santa cruz	20
+763	santa elena	8
+764	santa eufemia	6
+765	santa fe	21
+766	santa fe de la veracruz	21
+767	santa isabel	21
+768	santa maria	1
+769	santa rosa	11
+770	santa rosa del conlara	18
+771	santa sylvina	4
+772	santa teresa	21
+773	santa teresita	1
+774	santiago del estero	22
+775	santo tome	21
+776	sarandi	1
+777	sastre	21
+778	sauce	7
+779	sauce de luna	8
+780	segui	8
+781	serrano	6
+782	sierra de la ventana	1
+783	sierra grande	16
+784	sierras de cordoba	6
+785	simoca	23
+786	sn jose de metan	17
+787	sr calamuchita	6
+788	sta. rosa de calamuchita	6
+789	stefenelli	16
+790	strobel	8
+791	suardi	21
+792	suchales	21
+793	suipacha	1
+794	sumampa	22
+795	sunchales	21
+796	tacuarendi	21
+797	tafi viejo	23
+798	talar de pacheco	1
+799	tandil	1
+800	tapalque	1
+801	tapiales	1
+802	tartagal	17
+803	temperley	1
+804	teodelina	21
+805	termas rio hondo	22
+806	ticino	6
+807	tigre	1
+808	tilcara	10
+809	tiro federal	8
+810	toay	11
+811	tolhuin	23
+812	tornquist	1
+813	tortuguitas	1
+814	tostado	21
+815	totoras	21
+816	trancas	23
+817	trelew	5
+818	trenque lauquen	1
+819	tres algarrobos	1
+820	tres arroyos	1
+821	tres de febrero	1
+822	tres isletas	4
+823	tres lomas	1
+824	tristan suarez	1
+825	tucuman	23
+826	tunuyan	13
+827	tupungato	13
+828	ucacha	6
+829	ullun	18
+830	unquillo	6
+831	urdinarrain	8
+832	ushuaia	23
+833	uspallata	13
+834	va. cura brochero	6
+835	va. gral. belgrano	6
+836	valcheta	16
+837	valentin alsina	1
+838	vedia	1
+839	venado tuerto	21
+840	vera	21
+841	veronica	1
+842	vertiz	11
+843	viale	8
+844	vicente lopez	1
+845	victoria	8
+846	victorica	11
+847	vicuña mackenna	6
+848	viedma	16
+849	villa adelina	1
+850	villa allende	6
+851	villa angela	4
+852	villa ballester	1
+853	villa berthet	4
+854	villa bosch	1
+855	villa cañas	21
+856	villa carlos paz	6
+857	villa celina	1
+858	villa constitucion	21
+859	villa de merlo	18
+860	villa de soto	6
+861	villa del carmen	19
+862	villa del rosario	6
+863	villa del totoral	6
+864	villa dolores	6
+865	villa dominico	1
+866	villa el chocon	15
+867	villa elisa	8
+868	villa eloisa	21
+869	villa gdor galvez	21
+870	villa gesell	1
+871	villa giardino	6
+872	villa gobernador galvez	21
+873	villa gral. belgrano	6
+874	villa huidobro	6
+875	villa iris	1
+876	villa krause	18
+877	villa la angostura	15
+878	villa libertador san martin	8
+879	villa luzuriaga, la matanza	1
+880	villa lynch	1
+881	villa madero	1
+882	villa maipu	1
+883	villa maria	6
+884	villa martelli	1
+885	villa maza	1
+886	villa mercedes	19
+887	villa nueva	6
+888	villa nueva de guaymallen	13
+889	villa ocampo	21
+890	villa pehuenia	15
+891	villa regina	16
+892	villa saenz peña	1
+893	villa san jose	8
+894	villa santa rosa	6
+895	villa union	12
+896	villa valeria	6
+897	villa valle maria	8
+898	villaguay	8
+899	villalonga	1
+900	villas cañas	21
+901	virreyes	1
+902	vy de calamuchita	6
+903	wheelwright	21
+904	wilde	1
+905	winifreda	11
+906	yerba buena	23
+907	zapala	15
+908	zarate	1
