@@ -27,6 +27,13 @@
         nombre_carrera VARCHAR(50),
         PRIMARY KEY (id_plan)
     );
+    CREATE TABLE planes_codigo_nombre(
+        id_plan SERIAL,
+        nombre VARCHAR(50),
+        PRIMARY KEY id_plan
+    );
+
+
     CREATE TABLE Rendimiento_Academico(
         id_estudiante INTEGER,
         id_plan SMALLINT,
