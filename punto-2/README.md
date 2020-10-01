@@ -7,7 +7,7 @@
     - etl_estudiantes.csv 
     - 01-02-planes.txt
 
-### CARGA DE LAS TABLAS: Sedes, Sexo, Cohorte y Ciudad
+### CARGA DE LAS TABLAS: Sedes, Sexo, Ciudad y Cohorte
 En este primer archivo (etl_estudiantes.csv), 
 * Se hicieron tranformaciones, sacando columnas no importantes
 * Dividiendo de esta forma en cuatro flujos de tranformacion
@@ -34,21 +34,21 @@ Asimismo hay que agregar 3 columnas calculas correspondientes a:
 
 ![Views rendimiento academico](img/creacion-views-rendimiento-academico.jpg)
 
-- cantidad_aprobadas: estudiantes que aprobaron al menos una matria
+- cantidad_aprobadas: estudiantes que aprobaron al menos una materia
 
     |    Columna     |    
     | -------------- |
     | id_estudiante  |
     |    count       |
 
-- cantidad_cursadas: aca considero a todos los estudiantes, en totl 19465
+- cantidad_cursadas: aca considero a todos los estudiantes, en total 19465 estudiantes
 
     |    Columna     |    
     | -------------- |
     | id_estudiante  |
     |    count2      |
 
-- con_asign_aprob_y_sin_asign_aprob: aca esta el conjunto de estudiantes que no aprobaron ninguna materia UNION estudiantes que aprbaron al menos una materia. 
+- con_asign_aprob_y_sin_asign_aprob: aca esta el conjunto de estudiantes que no aprobaron ninguna materia UNION estudiantes que aprobaron al menos una materia. 
 
     |    Columna     |    
     | -------------- |
@@ -62,7 +62,7 @@ Asimismo hay que agregar 3 columnas calculas correspondientes a:
     | id_estudiante  |
     |    count2      |
 
-- promedio_aprobadas: solo estudiantes que aprobaron al menos una matria
+- promedio_aprobadas: solo estudiantes que aprobaron al menos una materia
 
     |    Columna     |
     | -------------- |
