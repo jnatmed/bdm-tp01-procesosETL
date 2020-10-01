@@ -16,13 +16,47 @@ CARGA DE LA TABLA PLANES:
 En este sentido una vez cargado en Spoon y pasado por el "Replace in String" fue exportado al archivo [salida._planes.txt](data/salida_planes.txt) 
 [Extraccion en Spoon](img/extraccion-tabla-planes.jpg)
 
-#### Extraccion del archivo [01-02-etl_cursadas.sql](data/01-02-etl_cursadas.sql)
+#### Extraccion del archivo [01-02-etl_cursadas.sql](data/01-02-etl_cursadas.sql) para la creacion de la Tabla Rendimiento Academico.
 
-+ En esta ultima etapa de extraccion, se necesita reemplazar los valores de las Columnas Sede, Sexo, Cohorte y Ciudad por sus correspondientes IDs, generados en los pasos anteriormente descriptos, para lograr cargar  
++ En esta ultima etapa de extraccion, se necesita reemplazar los valores de las Columnas Plan, Sede, Ciudad, Sexo y Cohorte y  por sus correspondientes IDs, generados en los pasos anteriormente descriptos. 
 
-Rendimiento_Academico(id_estudiante, id_plan, id_sede, id_ciudad, id_sexo, id_cohorte, cantidad_cursadas, cantidad_aprobadas, promedio)
+Asimismo hay que agregar 3 columnas calculas correspondientes a: 
+- La cantidad de asignaturas cursadas
+- La cantidad de asignaturas aprobadas
+- El promedio de las asignaturas aprobadas. 
 
-+ Este fue un proceso mucho mas complejo y lo tuve que dejar inconcluso, llegando a la ultima parte donde tenia que ir agregando las columnas calculadas de cantidad_cursadas, cantidad_aprobadas, promedio. El problema devino en los merge_join. 
++ En este paso tuve que crear 6 vistas en la base de datos:     
+    - 1. cantidad_aprobadas: estudiantes que aprobaron al menos una materia
+        |----------------|
+        | id_estudiante  |
+        | count          |
+        |----------------|    
+    - 2. cantidad_cursadas: aca considero a todos los estudiantes, en total 19465
+        |----------------|
+        | id_estudiante  |
+        | count2         |
+        |----------------|    
+    - 3. con_asign_aprob_y_sin_asign_aprob: aca esta el conjunto de estudiantes que no aprobaron ninguna materia UNION estudiantes que aprobaron al menos una materia. 
+        |----------------|
+        | id_estudiante  |
+        | count3         |
+        |----------------|    
+    - 4. estudiantes_sin_asignaturas_aprobadas: conjunto de estudiantes que no aprobaron ninguna materia. 
+        |----------------|
+        | id_estudiante  |
+        | count2         |
+        |----------------|
 
+    - 5. promedio_aprobadas: solo estudiantes que aprobaron al menos una materia
+        |----------------|
+        | id_estudiante  |
+        | count3         |
+        |----------------|
+    - 6. union_prom_aprob_y_cant_cursadas: aqui tengo la union de promedio de estudiantes que aprobaron al menos una materia con estudiantes que no aprobaron ninguna materia. 
 
+Esto es asi, para que luego al momento de interactuar con Pentaho, solo tengamos que cargar las tablas por table_input y hacer los correpondientes merge join entre tablas. 
+
+Consideraciones que se dieron durante el diseño:
+-  En los merge join: ambas tablas debian estar ordenadas. 
+-  
 
