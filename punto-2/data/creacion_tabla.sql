@@ -67,3 +67,4 @@
         ADD CONSTRAINT fk_id_cohorte
         FOREIGN KEY (id_cohorte)
         REFERENCES Cohortes(id_cohorte);
+        
