@@ -27,27 +27,32 @@ Asimismo hay que agregar 3 columnas calculas correspondientes a:
 
 + En este paso tuve que crear 6 vistas en la base de datos:     
     - 1. cantidad_aprobadas: estudiantes que aprobaron al menos una materia
+        |    Columna     |    
         | -------------- |
         | id_estudiante  |
         | count          |
         | -------------- |    
     - 2. cantidad_cursadas: aca considero a todos los estudiantes, en total 19465
+        |    Columna     |    
         | -------------- |
         | id_estudiante  |
         | count2         |
         | -------------- |    
     - 3. con_asign_aprob_y_sin_asign_aprob: aca esta el conjunto de estudiantes que no aprobaron ninguna materia UNION estudiantes que aprobaron al menos una materia. 
+        |    Columna     |    
         | -------------- |
         | id_estudiante  |
         | count3         |
         | -------------- |    
     - 4. estudiantes_sin_asignaturas_aprobadas: conjunto de estudiantes que no aprobaron ninguna materia. 
+        |    Columna     |
         | -------------- |
         | id_estudiante  |
         | count2         |
         | -------------- |
 
     - 5. promedio_aprobadas: solo estudiantes que aprobaron al menos una materia
+        |    Columna     |
         | -------------- |
         | id_estudiante  |
         | count3         |
