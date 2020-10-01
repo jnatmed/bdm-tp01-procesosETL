@@ -7,7 +7,7 @@
     - etl_estudiantes.csv 
     - 01-02-planes.txt
 
-CARGA DE LAS TABLAS: Sedes, Sexo, Cohorte y Ciudad
+### CARGA DE LAS TABLAS: Sedes, Sexo, Cohorte y Ciudad
 En este primer archivo (etl_estudiantes.csv), 
 * Se hicieron tranformaciones, sacando columnas no importantes
 * Dividiendo de esta forma en cuatro flujos de tranformacion
@@ -34,38 +34,42 @@ Asimismo hay que agregar 3 columnas calculas correspondientes a:
 
 ![Views rendimiento academico](img/creacion-views-rendimiento-academico.jpg)
 
-    - cantidad_aprobadas: estudiantes que aprobaron al menos una matria
+- cantidad_aprobadas: estudiantes que aprobaron al menos una matria
 
-        |    Columna     |    
-        | -------------- |
-        | id_estudiante  |
-        |    count       |
-    - cantidad_cursadas: aca considero a todos los estudiantes, en totl 19465
+    |    Columna     |    
+    | -------------- |
+    | id_estudiante  |
+    |    count       |
 
-        |    Columna     |    
-        | -------------- |
-        | id_estudiante  |
-        |    count2      |
-    - con_asign_aprob_y_sin_asign_aprob: aca esta el conjunto de estudiantes que no aprobaron ninguna materia UNION estudiantes que aprbaron al menos una materia. 
-        |    Columna     |    
-        | -------------- |
-        | id_estudiante  |
-        |    count3      |
-    - estudiantes_sin_asignaturas_aprobadas: conjunto de estudiantes queno aprobaron ninguna materia. 
+- cantidad_cursadas: aca considero a todos los estudiantes, en totl 19465
 
-        |    Columna     |
-        | -------------- |
-        | id_estudiante  |
-        |    count2      |
+    |    Columna     |    
+    | -------------- |
+    | id_estudiante  |
+    |    count2      |
 
-    - promedio_aprobadas: solo estudiantes que aprobaron al menos una matria
+- con_asign_aprob_y_sin_asign_aprob: aca esta el conjunto de estudiantes que no aprobaron ninguna materia UNION estudiantes que aprbaron al menos una materia. 
 
-        |    Columna     |
-        | -------------- |
-        | id_estudiante  |
-        |    count3      |
+    |    Columna     |    
+    | -------------- |
+    | id_estudiante  |
+    |    count3      |
 
-    - union_prom_aprob_y_cant_cursadas: aqui tengo la union de promedio de estudiantes que aprobaron al menos una materia con estudiantes que no aprobaron ninguna materia. 
+- estudiantes_sin_asignaturas_aprobadas: conjunto de estudiantes queno aprobaron ninguna materia. 
+
+    |    Columna     |
+    | -------------- |
+    | id_estudiante  |
+    |    count2      |
+
+- promedio_aprobadas: solo estudiantes que aprobaron al menos una matria
+
+    |    Columna     |
+    | -------------- |
+    | id_estudiante  |
+    |    count3      |
+
+- union_prom_aprob_y_cant_cursadas: aqui tengo la union de promedio de estudiantes que aprobaron al menos una materia con estudiantes que no aprobaron ninguna materia. 
 
 Esto es asi, para que luego al momento de interactuar con Pentaho, solo tengamos que cargar las tablas por table_input y hacer los correpondientes merge join entre tablas. 
 
