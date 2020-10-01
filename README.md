@@ -21,15 +21,6 @@ Explique someramente la metodología utilizada y estime el tiempo que le demand�
 + e. Sexo(id_sexo, sexo),
 + f. Cohortes(id_cohortes, cohorte).
 
-TABLA1 (id_estudiante,calificacion), <- etl_cursadas.sql where condicion='P' # para cantidad_aprobadas y promedio
-
-TABLA2 (id_estudiante,calificacion), <- etl_cursadas.sql where condicion='R' # para cantidad_cursadas
-
-TABLA3 ()
-
-
-
-
 Utilice el software PDI y estime el tiempo que le demandó la actividad.
 
 [Respuesta al Punto 2](punto-2/README.md)
