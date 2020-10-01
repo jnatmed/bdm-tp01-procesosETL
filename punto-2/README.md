@@ -18,7 +18,7 @@ En este primer archivo (etl_estudiantes.csv),
 En este sentido una vez cargado en Spoon y pasado por el "Replace in String" fue exportado al archivo 
 - [salida._planes.txt](data/salida_planes.txt) : que aun asi, me dejo en la salida comillas en los extremos, que pude sacar rapidamente con la herrmienta que la IDE de Visual Studio proporciona CTRL + F2
 ![sacado de comilla](img/uso-visual-studio.jpg)
-Y ahora si, paso al siguiente paso en la transformacion y carga de la tabla Planes..
+- Y ahora si, paso al siguiente paso en la transformacion y carga de la tabla Planes..
 ![Extraccion en Spoon](img/extraccion-tabla-planes.jpg)
 ![Extraccion Transformacion Carga Tabla Planes](img/carga-tabla-planes-2.jpg)
 
