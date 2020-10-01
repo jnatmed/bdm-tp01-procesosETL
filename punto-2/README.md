@@ -9,13 +9,13 @@ CARGA DE LAS TABLAS: Sedes, Sexo, Cohorte y Ciudad
 En este primer archivo (etl_estudiantes.csv), 
 * Se hicieron tranformaciones, sacando columnas no importantes
 * Dividiendo de esta forma en cuatro flujos de tranformacion
-[extraccion de datos de las Tablas Sedes, Sexo Cohorte y Ciudad](img/extraccion-tablas-primarias.jpg)
+![extraccion de datos de las Tablas Sedes, Sexo Cohorte y Ciudad](img/extraccion-tablas-primarias.jpg)
 
 CARGA DE LA TABLA PLANES: 
     * Para la extraccion de informacion del segundo archivo [01-02-planes.txt](data/01-02-planes.txt), fue un poco mas dificultosa, en el sentido que los espacios entre ambas columnas, no permitian de una forma sencilla parsear los datos. 
 En este sentido una vez cargado en Spoon y pasado por el "Replace in String" fue exportado al archivo 
 - [salida._planes.txt](data/salida_planes.txt) 
-- [Extraccion en Spoon](img/extraccion-tabla-planes.jpg)
+- ![Extraccion en Spoon](img/extraccion-tabla-planes.jpg)
 
 ##### Extraccion del archivo [01-02-etl_cursadas.sql](data/01-02-etl_cursadas.sql) para la creacion de la Tabla Rendimiento Academico.
 
