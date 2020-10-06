@@ -15,16 +15,16 @@ CREATE TABLE especialidades(
 );
 CREATE TABLE ciudades(
     id_ciudad SERIAL,
-    nombre_ciudad VARCHAR(20),
+    nombre_ciudad VARCHAR(50),
     id_provincia SMALLINT,
     PRIMARY KEY(id_ciudad)
 );
 CREATE TABLE medios(
     id_medio SERIAL,
-    descripcion_medio VARCHAR(20),
+    descripcion_medio VARCHAR(250),
     id_especialidad SMALLINT,
     id_tipo_medio SMALLINT,
-    direccion VARCHAR(20),
+    direccion VARCHAR(250),
     id_ciudad SMALLINT,
     PRIMARY KEY(id_medio)
 );
