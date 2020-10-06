@@ -8,3 +8,18 @@
 
 #### Respuesta: 
 
++ Centralize el trabajo, dividiendo en dos partes: 
+
+![job punto 3](img/jpb-punto-3.jpg)1
+
+##### Extraccion Transformacion y carga de las Tablas 
+- Especialidades 
+- Tipos Medio
+- Ciudades 
+- Provincias
+
+![extraccion de datos de las Especialidades Tipos Medio Ciudades Provincias](img/carga-tablas-ciudades-prov-tipo_medio-espec.jpg)
+
+##### Para luego hacer la extraccion transformacion y carga de la tabla medios
+
+![extraccion y carga en la tabla medios](img/carga-tabla-medios.jpg)
